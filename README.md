@@ -32,9 +32,17 @@ cd backend
 file : appsettings.json
 {
 "ConnectionStrings": {
-"DefaultConnection": "Server=localhost;Database=TicketDB;Trusted_Connection=True;"
+"DefaultConnection": "Server=myservername;Database=Db_Tickets;User Id=User_TicketAPI;Password=xxx;MultipleActiveResultSets=True;TrustServerCertificate=True"
+},
 }
-}
+table:
+
+CREATE TABLE Tickets (
+TicketID INT PRIMARY KEY IDENTITY(1,1),
+Description NVARCHAR(255) NOT NULL,  
+ Status NVARCHAR(10) CHECK (Status IN ('Open', 'Closed')),
+Date DATETIME DEFAULT GETDATE(),  
+);
 
 - Restore packages and create database:
 
