@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+mat-header-cell {
+  background-color: #3f51b5;
+  color: white;
+}
+
+mat-cell {
+  padding: 10px;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: green;
+  color: white;
+}

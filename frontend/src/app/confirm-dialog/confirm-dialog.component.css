@@ -1,0 +1,10 @@
+.btn-cancel {
+  background-color: grey;
+  color: white;
+  margin-right: 8px;
+}
+
+.btn-delete {
+  background-color: red;
+  color: white;
+}
